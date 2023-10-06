@@ -5,6 +5,17 @@
   max-width: 1024px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .section1 {
+    display: block;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 32vh;
+  }
+}
 .section1__header {
   margin: 0 auto;
   background-color: black;
@@ -23,6 +34,12 @@
   width: 116px;
   height: 100%;
   margin-left: 42px;
+}
+@media (max-width: 768px) {
+  .section1__header__logo {
+    width: 100px;
+    height: 100%;
+  }
 }
 .section1__header__btn {
   width: 116px;
@@ -52,6 +69,12 @@
   text-align: center;
   opacity: 0%;
   transition: opacity 5s ease;
+}
+@media (max-width: 768px) {
+  .section1__title {
+    width: 100%;
+    font-size: 20px;
+  }
 }
 
 .transicao1 {
@@ -95,6 +118,17 @@
   max-width: 1024px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .section2 {
+    display: block;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25vh;
+  }
+}
 
 .transicao2 {
   background: linear-gradient(180deg, #7B0C14 0%, rgba(20, 16, 29, 0) 36%);
@@ -126,9 +160,22 @@
   color: whitesmoke;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .list-group-1 {
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .list-group-1 a {
   text-decoration: none;
   color: whitesmoke;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .list-group-1 a {
+    font-size: 12px;
+  }
 }
 
 .card {
@@ -136,8 +183,18 @@
   border: none;
   transition: all 1s;
 }
+@media (max-width: 678px) {
+  .card {
+    max-width: 100px;
+  }
+}
 .card:hover {
   transform: scale(1.1);
+}
+
+a.item.active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid whitesmoke;
 }
 
 .tab-pane.active {
@@ -145,10 +202,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.list-group-1 {
-  padding: 0 75px;
 }
 
 * {
@@ -164,8 +217,8 @@
   font-weight: 400;
 }
 body {
-  border: dotted;
   background-color: #14101D;
+  width: 100%;
 }
 
 footer {

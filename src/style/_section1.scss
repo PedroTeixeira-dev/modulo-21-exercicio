@@ -2,6 +2,16 @@
 
 .section1 {
 
+    @media(max-width:768px){
+        display: block;
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 32vh;
+    }
+
     background-image: url(../../img/wallpaper-ceu.jpg);
     height: 1000px;
     background-size: cover;
@@ -28,6 +38,11 @@
         width: 116px;
         height: 100%;
         margin-left: 42px;
+
+        @media(max-width: 768px){
+            width: 100px;
+            height: 100%;
+        }
     }
 
     &__btn {
@@ -64,6 +79,11 @@
         text-align: center;
         opacity: 0%;
         transition: opacity 5s ease;
+
+        @media(max-width:768px){
+            width: 100%;
+            font-size: 20px;
+        }
 
     }
 }
