@@ -1,0 +1,15 @@
+.transicao2{
+    background: linear-gradient(180deg, #7B0C14 0%, rgba(20, 16, 29, 0) 36%);
+    height: 178px;
+    max-width:1024px ;
+    margin: 0 auto;
+    
+
+    &__p {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 60px;
+        color: whitesmoke;
+
+    }
+}

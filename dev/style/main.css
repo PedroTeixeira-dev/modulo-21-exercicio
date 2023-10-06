@@ -1,25 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: starJedi;
-}
-
-@font-face {
-  font-family: starJedi;
-  src: url(../../fonts/starjedi/Starjedi.ttf);
-  font-weight: 400;
-}
-body {
-  max-width: 1024px;
-  border: dotted;
-  margin: 0 auto;
-}
-
 .section1 {
   background-image: url(../../img/wallpaper-ceu.jpg);
   height: 1000px;
   background-size: cover;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 .section1__header {
   margin: 0 auto;
@@ -54,7 +38,7 @@ body {
 }
 .section1__header__btn:hover {
   background-color: #FFC107;
-  color: rgb(255, 255, 255);
+  color: whitesmoke;
 }
 .section1__header__btn:active {
   transform: translateY(-8px);
@@ -68,6 +52,134 @@ body {
   text-align: center;
   opacity: 0%;
   transition: opacity 5s ease;
+}
+
+.transicao1 {
+  height: 190px;
+  width: 100%;
+  background: linear-gradient(180deg, #0B0C28 85%, #1846CA 100%);
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.transicao1__p1 {
+  color: white;
+  font-size: 16px;
+  font-family: Star Jedi;
+  font-weight: 400;
+  word-wrap: break-word;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.transicao1__p2 {
+  font-size: 64px;
+  font-family: Star Jedi;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+.transicao1__p2__1 {
+  color: #1F31D4;
+}
+.transicao1__p2__2 {
+  color: #D60808;
+}
+
+.section2 {
+  background-image: url(../../img/wallpaper-luta.jpg);
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.transicao2 {
+  background: linear-gradient(180deg, #7B0C14 0%, rgba(20, 16, 29, 0) 36%);
+  height: 178px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.transicao2__p {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60px;
+  color: whitesmoke;
+}
+
+.filmes {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.filmes__tabpanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-group-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: whitesmoke;
+  width: 100%;
+}
+.list-group-1 a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.card {
+  max-width: 240px;
+  border: none;
+  transition: all 1s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.tab-pane.active {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.list-group-1 {
+  padding: 0 75px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: starJedi;
+}
+
+@font-face {
+  font-family: starJedi;
+  src: url(../../fonts/starjedi/Starjedi.ttf);
+  font-weight: 400;
+}
+body {
+  border: dotted;
+  background-color: #14101D;
+}
+
+footer {
+  margin-top: 200px;
+  background-color: black;
+  height: 100px;
+}
+footer p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+  padding-top: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

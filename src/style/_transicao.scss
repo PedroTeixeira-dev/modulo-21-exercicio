@@ -1,0 +1,38 @@
+.transicao1 {
+    height: 190px;
+    width: 100%;
+    background: linear-gradient(180deg, #0B0C28 85%, #1846CA 100%);
+    max-width:1024px ;
+    margin: 0 auto;
+    
+
+    &__p1 {
+        color: white;
+        font-size: 16px;
+        font-family: Star Jedi;
+        font-weight: 400;
+        word-wrap: break-word;
+        width: 280px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    &__p2 {
+        font-size: 64px;
+        font-family: Star Jedi;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 8px;
+
+        &__1{
+            color: #1F31D4;
+        }
+        &__2 {
+            color: #D60808;
+        }
+    }
+
+
+}

@@ -1,9 +1,19 @@
+@use 'section1';
+@use 'fonts';
+@use 'transicao';
+@use 'section2';
+@use 'transicao2';
+@use 'filmes';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: starJedi;
 }
+
+
+
 
 @font-face {
     font-family: starJedi;
@@ -12,74 +22,24 @@
 }
 
 body {
-    max-width:1024px ;
     border: dotted;
-    margin: 0 auto;
+    background-color: fonts.$corDeFundo;
 }
 
+footer{
+    margin-top: 200px;
+    background-color: black;
+    height: 100px;
 
-.section1 {
-
-    background-image: url(../../img/wallpaper-ceu.jpg);
-    height: 1000px;
-    background-size: cover;
-
-    &__header {
-        margin: 0 auto;
-        background-color: black;
-        max-width: 98%;
-        width: 100%;
-        height: 120px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border: 3px #FFC107 solid;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-
-    
-    &__logo{
-        width: 116px;
-        height: 100%;
-        margin-left: 42px;
-    }
-
-    &__btn {
-        width: 116px;
-        height: 64px;
-        margin-right: 42px;
-        color: #FFC107;
-        font-size: 16px;
+    p{
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
         word-wrap: break-word;
-        background-color : black;
-        border-radius: 10px;
-        border: 3px #FFC107 solid;
-        transition: all 0.5s;
-
-        &:hover {
-            background-color: #FFC107;
-            color: rgb(255, 255, 255);
-        }
-
-        &:active {
-            transform: translateY(-8px) ;
-        }
-    }
-
-    }
-
-    &__title {
-        color: #FFC107;
-        font-size: 24px;
-        word-wrap: break-word;
-        margin: 80px auto;
-        width: 575px;
         text-align: center;
-        opacity: 0%;
-        transition: opacity 5s ease;
-
+        padding-top: 16px;
     }
 }
+
+
 
